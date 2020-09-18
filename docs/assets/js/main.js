@@ -1,0 +1,1 @@
+"use strict";window.addEventListener("keydown",(function(e){document.querySelector(`audio[data-key='${e.keyCode}']`),document.querySelector(`.key[data-key='${e.keyCode}']`)}));

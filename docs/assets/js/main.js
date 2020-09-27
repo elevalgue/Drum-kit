@@ -1,5 +1,1 @@
-'use strict';
-window.addEventListener('keydown', function (e) {
-  document.querySelector(`audio[data-key='${e.keyCode}']`),
-    document.querySelector(`.key[data-key='${e.keyCode}']`);
-});
+"use strict";function playSound(e){let t="";t=e.keyCode?e.keyCode:this.dataset.key;const n=document.querySelector(`audio[data-key="${t}"]`),o=document.querySelector(`.key[data-key="${t}"]`);n&&(n.currentTime=0,n.play(),o.classList.add("playing"))}function removeTransition(e){"transform"===e.propertyName&&this.classList.remove("playing")}const keys=document.querySelectorAll(".key");for(let e,t=0;e=keys[t];t++)e.addEventListener("transitionend",removeTransition),e.addEventListener("click",playSound);window.addEventListener("keydown",playSound);

@@ -33,9 +33,10 @@
     font-size: 34px;
     text-transform: capitalize;
   }
+
   .playing {
     transform: scale(1.1);
     border-color: #ffeb24;
-    box-shadow: #f7ef9e;
+    box-shadow: 0 6px 5px #f1ecaa;
   }
 }

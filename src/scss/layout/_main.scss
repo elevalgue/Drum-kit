@@ -1,5 +1,4 @@
 .main {
-  // background-color: black;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -33,5 +32,10 @@
     font-family: lobster;
     font-size: 34px;
     text-transform: capitalize;
+  }
+  .playing {
+    transform: scale(1.1);
+    border-color: #ffeb24;
+    box-shadow: #f7ef9e;
   }
 }
